@@ -38,7 +38,7 @@ ul li {
 .room {
     margin: 52px;
     background-color: rgb(206, 204, 204);
-    flex-direction: row;
+
 }
 .room img {
   width: 196px;
