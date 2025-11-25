@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: white;
+  padding: 20px 30px;
+}
+.head {
+  display: flex;
+  justify-content: space-around;
+  gap: 80px;
+}
+ul {
+  display: flex;
+  justify-self: center;
+  flex-direction: row;
+  gap: 50px;
+  list-style: none;
+}
+ul li {
+  color: grey;
+}
+.lego img {
+  width: 62px;
+  height: 62px;
+}
+.fic {
+  display: flex;
+  gap: 30px;
+  margin-top: 5px;
+}
+.fic img {
+  width: 45px;
+  height: 45px;
+}
+.room {
+    margin: 52px;
+    background-color: rgb(206, 204, 204);
+    flex-direction: row;
+}
+.room img {
+  width: 196px;
+  height: 140px;
+  border-radius: 6px;
+}
