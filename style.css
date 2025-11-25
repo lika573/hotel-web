@@ -31,17 +31,16 @@ ul li {
   gap: 16px;
   margin-top: 5px;
 }
-.fic1 img{
-    width: 102px;
-    height: 32px;
-
+.fic1 img {
+  width: 102px;
+  height: 32px;
 }
 .fic img {
   width: 32px;
   height: 32px;
 }
 .room {
-    margin: 52px;
+  margin: 52px;
 }
 .room img {
   width: 196px;
@@ -49,85 +48,82 @@ ul li {
   border-radius: 6px;
 }
 main {
-    display: flex;
-    padding: 5px; 
-    height: 800px; 
-    align-items: flex-start; 
-    background-color: #f9fafb; 
+  display: flex;
+  padding: 5px;
+  height: 800px;
+  align-items: flex-start;
+  background-color: #f9fafb;
 }
 .view {
-    background-color: white;
-    box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 300px; 
-    border: 1px solid #f3f4f6; 
+  background-color: white;
+  box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #f3f4f6;
 }
 .room img {
-    width: 192px;
-    height: 140px;
-    object-fit: cover; 
+  width: 192px;
+  height: 140px;
+  object-fit: cover;
 }
 
 .text1 h3 {
-    font-size: 20px;
-    font-weight: 700; 
-    color: #1f2937; 
-    line-height: 22px;
-    margin-left: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2937;
+  line-height: 22px;
+  margin-left: 20px;
 }
 .id p {
-    display: inline;
-    padding: 4px 5px; 
-    font-size: 14px; 
-    font-weight: 500; 
-    border: 1px solid #252525;
-    border-radius: 4px; 
-    margin-left: 20px;
+  display: inline;
+  padding: 4px 5px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #252525;
+  border-radius: 4px;
+  margin-left: 20px;
 }
 
-
 .lin {
-    padding: 5px;
-    margin-left: 20px;
+  padding: 5px;
+  margin-left: 20px;
 }
 
 .lin ul {
-    list-style: none;
-    flex-direction: column;
-    gap: 12px; 
+  list-style: none;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .lin li {
-    color: #6b7280; 
-    font-size: 14px; 
-    transition: color 0.3s ease; 
-    margin-right: 250px;
+  color: #6b7280;
+  font-size: 14px;
+  transition: color 0.3s ease;
+  margin-right: 250px;
 }
 
 .lin li:hover {
-    color: #111827; 
+  color: #111827;
 }
 
-
 .act {
-    border-top: 1px solid #f3f4f6;
-    border-radius: 8px; 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  border-top: 1px solid #f3f4f6;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .cheak img {
-    width: 64px;
-    height: 16px;
-    
+  width: 64px;
+  height: 16px;
 }
 .act p {
-    color: #374151; 
-    font-weight: 500; 
+  color: #374151;
+  font-weight: 500;
 }
 
 .down img {
-    width:16px;
-    height:16px;
+  width: 16px;
+  height: 16px;
 }
