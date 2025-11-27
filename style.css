@@ -216,3 +216,76 @@ nav {
   background-color: #f9fafb;
   color: #111827;
 }
+.container {
+width: 320px;
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+
+.card {
+background: #fff;
+border-radius: 12px;
+padding: 20px;
+box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+
+}
+
+
+.status {
+font-size: 14px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 10px;
+}
+
+
+.status span {
+display: flex;
+align-items: center;
+gap: 6px;
+color: #4caf50;
+font-weight: 600;
+}
+
+
+.earnings h3 {
+margin: 0 0 10px;
+font-size: 18px;
+}
+
+
+.earnings .row {
+display: flex;
+justify-content: space-between;
+margin-bottom: 8px;
+font-size: 16px;
+}
+.page{
+  display: flex;
+  gap: 5px;
+}
+.page img{
+  width: 15px;
+  height: 12px;
+  margin: 3px;
+}
+
+.page h3 {
+margin: 0 10px;
+font-size: 18px;
+}
+
+
+.tips ul {
+padding-left: 18px;
+margin: 0;
+}
+
+
+.tips ul li {
+margin-bottom: 8px;
+line-height: 1.4;
+}
