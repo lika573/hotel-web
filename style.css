@@ -289,3 +289,8 @@ margin: 0;
 margin-bottom: 8px;
 line-height: 1.4;
 }
+.reservation{
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 20%;
+}
