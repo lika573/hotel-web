@@ -1,5 +1,6 @@
 const reservation = document.querySelector(".reservation") as HTMLDivElement;
 
+
 type Reservetion = {
   roomname: string;
   guestname: string;
@@ -43,7 +44,7 @@ const reservations: Reservetion[] = [
     status: "confrimed",
   },
 ];
-console.log(reservations.map((res) => console.log(res)));
+
 
 if (reservation) {
   reservation.innerHTML = reservations
@@ -57,6 +58,7 @@ if (reservation) {
           <p>Payment: ${reservation.payment} ${reservation.currency}</p>
           <p>Reservation #: ${reservation.number}</p>
           <p>Status: ${reservation.status}</p>
+
         </div>
     
       
@@ -66,3 +68,17 @@ if (reservation) {
 } else {
   console.log("error ");
 }
+
+type Review = {
+    id:string,
+    guestname:string,
+    avatar:string,
+    tripstart:string,
+    tripend:string,
+    rating:number,
+    comment:string,
+    replay:boolean
+
+}
+
+

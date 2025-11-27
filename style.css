@@ -293,4 +293,9 @@ line-height: 1.4;
   position: absolute;
   margin-top: 200px;
   margin-left: 20%;
+  max-width: 900px;
+  display: flex;
+}
+.card-res{
+  background-color: white;
 }

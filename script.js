@@ -31,14 +31,17 @@ var reservations = [
         status: "confrimed",
     },
 ];
-console.log(reservations.map(function (res) { return console.log(res); }));
 if (reservation) {
     reservation.innerHTML = reservations
         .map(function (reservation) {
-        return "\n       <div class=\"card-res\">\n          <h3>".concat(reservation.roomname, "</h3>\n          <p>Guest: ").concat(reservation.guestname, "</p>\n          <p>Check-in: ").concat(reservation.checkin, "</p>\n          <p>Check-out: ").concat(reservation.checkout, "</p>\n          <p>Payment: ").concat(reservation.payment, " ").concat(reservation.currency, "</p>\n          <p>Reservation #: ").concat(reservation.number, "</p>\n          <p>Status: ").concat(reservation.status, "</p>\n        </div>\n    \n      \n  ");
+        return "\n       <div class=\"card-res\">\n          <h3>".concat(reservation.roomname, "</h3>\n          <p>Guest: ").concat(reservation.guestname, "</p>\n          <p>Check-in: ").concat(reservation.checkin, "</p>\n          <p>Check-out: ").concat(reservation.checkout, "</p>\n          <p>Payment: ").concat(reservation.payment, " ").concat(reservation.currency, "</p>\n          <p>Reservation #: ").concat(reservation.number, "</p>\n          <p>Status: ").concat(reservation.status, "</p>\n\n        </div>\n    \n      \n  ");
     })
         .join(" ");
 }
 else {
     console.log("error ");
 }
+// type Review = {
+//     id:string,
+//     guestname:string,
+// }
