@@ -196,6 +196,37 @@ type Activities = {
   avatar:string,
   act:string,
   message:string,
-  date:number,
-  time:number,
+  date:string,
+  time:string,
 }
+
+const activitie : Activities[] = [
+  {
+    avatar:"image/Ellipse 176.png",
+    act:"Room with balcony needscleaning",
+    message:"Lorem ipsum dolor sit ament",
+    date: "April 22, 2022",
+    time:"20:20 pm"
+  },
+    {
+    avatar:"image/Ellipse 178.png",
+    act:"Room with balcony needscleaning",
+    message:"Lorem ipsum dolor sit ament",
+    date: "April 22, 2022",
+    time:"20:20 pm"
+  },
+    {
+    avatar:"iimage/Ellipse 179.png",
+    act:"Room with balcony needscleaning",
+    message:"Lorem ipsum dolor sit ament",
+    date: "April 22, 2022",
+    time:"20:20 pm"
+  },
+    {
+    avatar:"image/Rectangle 726.png",
+    act:"Room with balcony needscleaning",
+    message:"Lorem ipsum dolor sit ament",
+    date: "April 22, 2022",
+    time:"20:20 pm"
+  },
+] 
