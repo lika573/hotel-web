@@ -114,7 +114,7 @@ var massages = [
 ];
 if (massage) {
     massage.innerHTML = massages.map(function (mes) {
-        return "   <div class=\"massage-card\">\n          <img src=\"".concat(mes.avatar, "\" alt=\"avatar\" class=\"avatar\">\n          <div class=\"massage-content\">\n            <div class=\"header\">\n              <span class=\"guestname\">").concat(mes.guestname, "</span> | \n              <span class=\"procces\">").concat(mes.procces, "</span>\n            </div>\n            <div class=\"date\">").concat(mes.date, "</div>\n            <div class=\"massage-text\">").concat(mes.massage, "</div>\n          </div>\n        </div>\n      \n  ");
+        return "   \n     \n      <div class=\"massage-card\">\n          <img src=\"".concat(mes.avatar, "\" alt=\"avatar\" class=\"avatar\">\n          <div class=\"massage-content\">\n            <div class=\"header\">\n              <span class=\"guestname\">").concat(mes.guestname, "</span> | \n              <span class=\"procces\">").concat(mes.procces, "</span>\n            </div>\n            <div class=\"date\">").concat(mes.date, "</div>\n            <div class=\"massage-text\">").concat(mes.massage, "</div>\n          </div>\n        </div>\n      \n  ");
     })
         .join(" ");
 }

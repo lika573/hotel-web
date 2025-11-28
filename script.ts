@@ -1,6 +1,7 @@
 const reservation = document.querySelector(".reservation") as HTMLDivElement;
 const review = document.querySelector(".review") as HTMLDivElement;
 const massage = document.querySelector(".massage") as HTMLDivElement;
+const activities = document.querySelector(".activities") as HTMLDivElement;
 
 type Reservetion = {
   roomname: string;
@@ -171,7 +172,9 @@ const massages: Massage[] = [
 
 if (massage) {
   massage.innerHTML = massages.map((mes) => {
-      return`   <div class="massage-card">
+      return`   
+     
+      <div class="massage-card">
           <img src="${mes.avatar}" alt="avatar" class="avatar">
           <div class="massage-content">
             <div class="header">
@@ -188,4 +191,11 @@ if (massage) {
     .join(" ");
 } else {
   console.log("error ");
+}
+type Activities = {
+  avatar:string,
+  act:string,
+  message:string,
+  date:number,
+  time:number,
 }
