@@ -51,7 +51,7 @@ ul li {
 }
 .part2{
   display: flex;
-  gap: 50px;
+  gap: 60px;
 }
 .room {
   margin: 52px;
@@ -69,6 +69,7 @@ ul li {
   height: 100vh;
   max-width: 300px;
   border: 1px solid #f3f4f6;
+ 
 }
 .room img {
   width: 192px;
@@ -146,7 +147,7 @@ ul li {
 
 nav {
   width: 100%;
-  max-width: 1024px;
+  height: 120px;
   margin: 0 auto;
 }
 
@@ -184,7 +185,6 @@ nav {
 
 .tod {
   position: relative;
-  font-family: Arial, sans-serif;
   font-size: 14px;
   color: #4b5563;
 }
@@ -292,21 +292,30 @@ nav {
 }
 main {
   padding: 5px;
-  height: 800px;
   background-color: #f9fafb;
-}
-.reservation {
-  max-width: 900px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: -600px;
 }
+
+.reservation, .review, .massage {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  
+}
+
 .card-res {
   background-color: white;
+  display: flex;
 }
 
 .review {
   display: flex;
   flex-direction: row;
-  max-width: 1000px;
+  max-width: 900px;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 8px;

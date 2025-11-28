@@ -10,7 +10,7 @@ type Reservetion = {
   payment: number;
   currency: string;
   number: number;
-  status: "confrimed" | "pending" | "cencelled";
+  status: string;
 };
 
 const reservations: Reservetion[] = [
@@ -22,7 +22,7 @@ const reservations: Reservetion[] = [
     payment: 2500,
     currency: "GEL",
     number: 12348,
-    status: "confrimed",
+    status: "image/Frame 6418.png",
   },
   {
     roomname: "Standard King Room with Forest View",
@@ -32,7 +32,7 @@ const reservations: Reservetion[] = [
     payment: 2500,
     currency: "GEL",
     number: 12348,
-    status: "confrimed",
+    status: "image/Frame 6418.png",
   },
   {
     roomname: "Standard King Room with Forest View",
@@ -42,7 +42,7 @@ const reservations: Reservetion[] = [
     payment: 2500,
     currency: "GEL",
     number: 12348,
-    status: "confrimed",
+    status: "image/Frame 6418.png",
   },
 ];
 
@@ -52,12 +52,12 @@ if (reservation) {
       return `
        <div class="card-res">
           <h3>${reservation.roomname}</h3>
-          <p>Guest: ${reservation.guestname}</p>
+          <p> name :${reservation.guestname}</p>
           <p>Check-in: ${reservation.checkin}</p>
           <p>Check-out: ${reservation.checkout}</p>
           <p>Payment: ${reservation.payment} ${reservation.currency}</p>
-          <p>Reservation #: ${reservation.number}</p>
-          <p>Status: ${reservation.status}</p>
+          <p>Reservation: ${reservation.number}</p>
+          <p>Status:<img src="image/Frame 6418.png" alt="frame"></p>
 
         </div>
     

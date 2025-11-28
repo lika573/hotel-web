@@ -10,7 +10,7 @@ var reservations = [
         payment: 2500,
         currency: "GEL",
         number: 12348,
-        status: "confrimed",
+        status: "image/Frame 6418.png",
     },
     {
         roomname: "Standard King Room with Forest View",
@@ -20,7 +20,7 @@ var reservations = [
         payment: 2500,
         currency: "GEL",
         number: 12348,
-        status: "confrimed",
+        status: "image/Frame 6418.png",
     },
     {
         roomname: "Standard King Room with Forest View",
@@ -30,13 +30,13 @@ var reservations = [
         payment: 2500,
         currency: "GEL",
         number: 12348,
-        status: "confrimed",
+        status: "image/Frame 6418.png",
     },
 ];
 if (reservation) {
     reservation.innerHTML = reservations
         .map(function (reservation) {
-        return "\n       <div class=\"card-res\">\n          <h3>".concat(reservation.roomname, "</h3>\n          <p>Guest: ").concat(reservation.guestname, "</p>\n          <p>Check-in: ").concat(reservation.checkin, "</p>\n          <p>Check-out: ").concat(reservation.checkout, "</p>\n          <p>Payment: ").concat(reservation.payment, " ").concat(reservation.currency, "</p>\n          <p>Reservation #: ").concat(reservation.number, "</p>\n          <p>Status: ").concat(reservation.status, "</p>\n\n        </div>\n    \n      \n  ");
+        return "\n       <div class=\"card-res\">\n          <h3>".concat(reservation.roomname, "</h3>\n          <p> name :").concat(reservation.guestname, "</p>\n          <p>Check-in: ").concat(reservation.checkin, "</p>\n          <p>Check-out: ").concat(reservation.checkout, "</p>\n          <p>Payment: ").concat(reservation.payment, " ").concat(reservation.currency, "</p>\n          <p>Reservation: ").concat(reservation.number, "</p>\n          <p>Status:<img src=\"image/Frame 6418.png\" alt=\"frame\"></p>\n\n        </div>\n    \n      \n  ");
     })
         .join(" ");
 }
