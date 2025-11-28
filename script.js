@@ -1,6 +1,7 @@
 var reservation = document.querySelector(".reservation");
 var review = document.querySelector(".review");
 var massage = document.querySelector(".massage");
+var activities = document.querySelector(".activities");
 var reservations = [
     {
         roomname: "Standard King Room with Forest View",
@@ -36,7 +37,7 @@ var reservations = [
 if (reservation) {
     reservation.innerHTML = reservations
         .map(function (reservation) {
-        return "\n       <div class=\"card-res\">\n          <h3>".concat(reservation.roomname, "</h3>\n          <p> name :").concat(reservation.guestname, "</p>\n          <p>Check-in: ").concat(reservation.checkin, "</p>\n          <p>Check-out: ").concat(reservation.checkout, "</p>\n          <p>Payment: ").concat(reservation.payment, " ").concat(reservation.currency, "</p>\n          <p>Reservation: ").concat(reservation.number, "</p>\n          <p>Status:<img src=\"image/Frame 6418.png\" alt=\"frame\"></p>\n\n        </div>\n    \n      \n  ");
+        return "\n     \n       <div class=\"card-res\">\n          <h3>".concat(reservation.roomname, "</h3>\n          <p> name :").concat(reservation.guestname, "</p>\n          <p>Check-in: ").concat(reservation.checkin, "</p>\n          <p>Check-out: ").concat(reservation.checkout, "</p>\n          <p>Payment: ").concat(reservation.payment, " ").concat(reservation.currency, "</p>\n          <p>Reservation: ").concat(reservation.number, "</p>\n          <p>Status:<img src=\"image/Frame 6418.png\" alt=\"frame\"></p>\n\n        </div>\n    \n      \n  ");
     })
         .join(" ");
 }
@@ -120,4 +121,42 @@ if (massage) {
 }
 else {
     console.log("error ");
+}
+var activitie = [
+    {
+        avatar: "image/Ellipse 176.png",
+        act: "Room with balcony needscleaning",
+        message: "Lorem ipsum dolor sit ament",
+        date: "April 22, 2022",
+        time: "20:20 pm"
+    },
+    {
+        avatar: "image/Ellipse 178.png",
+        act: "Room with balcony needscleaning",
+        message: "Lorem ipsum dolor sit ament",
+        date: "April 22, 2022",
+        time: "20:20 pm"
+    },
+    {
+        avatar: "image/Ellipse 179.png",
+        act: "Room with balcony needscleaning",
+        message: "Lorem ipsum dolor sit ament",
+        date: "April 22, 2022",
+        time: "20:20 pm"
+    },
+    {
+        avatar: "image/Rectangle 726.png",
+        act: "Room with balcony needscleaning",
+        message: "Lorem ipsum dolor sit ament",
+        date: "April 22, 2022",
+        time: "20:20 pm"
+    },
+];
+if (activities) {
+    activities.innerHTML = activitie.map(function (actt) {
+        return "\n      <div class=\"activity-card\">\n        <img src=\"".concat(actt.avatar, "\" alt=\"avatar\" class=\"avatar\">\n        <div class=\"activity\">\n          <div class=\"header\">").concat(actt.act, "</div>\n          <div class=\"message\">").concat(actt.message, "</div>\n          <div class=\"meta\">\n            <span class=\"date\">").concat(actt.date, "</span> | \n            <span class=\"time\">").concat(actt.time, "</span>\n          </div>\n        </div>\n      </div>\n    ");
+    }).join("");
+}
+else {
+    console.error("Error");
 }

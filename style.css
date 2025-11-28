@@ -1,26 +1,37 @@
-
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
   background-color: #f5f5f5;
 }
 
 header {
-  background-color: white;
-  padding: 20px 30px;
+  padding: 20px 0px;
 }
 .head {
   display: flex;
-  justify-content: space-around;
-  gap: 80px;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
 }
-ul {
+.links {
   display: flex;
-  justify-self: center;
-  flex-direction: row;
-  gap: 50px;
+  align-items: center;
+}
+.links ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
   list-style: none;
 }
 ul li {
+  color: grey;
+}
+ul li a {
+  text-decoration: none;
   color: grey;
 }
 .lego img {
@@ -40,13 +51,13 @@ ul li {
   width: 32px;
   height: 32px;
 }
-.layout{
+.layout {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
   padding: 10px;
   background-color: #f9fafb;
-
+  width: 95%;
+  margin: 0 auto;
 }
 
 .room {
@@ -61,15 +72,20 @@ ul li {
 .view {
   background-color: white;
   box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.1);
-  width: 100%;
   max-width: 300px;
   border: 1px solid #f3f4f6;
- 
+  padding: 15px;
+  box-sizing: border-box;
+  width: 300px;
+  height: 1633px;
 }
+
 .room img {
-  width: 192px;
+  width: 196px;
   height: 140px;
   object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
 }
 
 .text1 h3 {
@@ -77,34 +93,39 @@ ul li {
   font-weight: 700;
   color: #1f2937;
   line-height: 22px;
-  margin-left: 20px;
+  margin-bottom: 10px;
 }
+
 .id p {
-  display: inline;
-  padding: 4px 5px;
+  display: inline-block;
+  padding: 4px 8px;
   font-size: 14px;
   font-weight: 500;
   border: 1px solid #252525;
   border-radius: 4px;
-  margin-left: 20px;
+  margin-bottom: 15px;
 }
 
 .lin {
-  padding: 5px;
-  margin-left: 20px;
+  padding: 5px 0;
+}
+
+.lin p {
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .lin ul {
   list-style: none;
-  flex-direction: column;
-  gap: 12px;
+  padding: 0;
+  margin: 0;
 }
 
 .lin li {
   color: #6b7280;
   font-size: 14px;
+  margin-bottom: 8px;
   transition: color 0.3s ease;
-  margin-right: 250px;
 }
 
 .lin li:hover {
@@ -112,17 +133,26 @@ ul li {
 }
 
 .act {
-  border-top: 1px solid #f3f4f6;
-  border-radius: 8px;
+  width: 196px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 10px 0;
+  margin-top: 20px;
 }
 
-.cheak img {
-  width: 64px;
-  height: 16px;
+#act {
+  padding: 8px 12px;
+  border: 1px solid grey;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  color: #333;
+  cursor: pointer;
+  width: 196px;
+  height: 35px;
 }
+
 .act p {
   color: #374151;
   font-weight: 500;
@@ -134,15 +164,10 @@ ul li {
 }
 
 .over h3 {
-  margin-left: 50px;
+  margin-right: 900px;
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
-}
-
-
-
-.over h3 {
   font-size: 32px;
   font-weight: 600;
   color: #111827;
@@ -150,13 +175,12 @@ ul li {
 
 .strt {
   display: flex;
-  gap: 50px;
-  max-width: 700px;
+  justify-content: space-between;
+  width: 90%;
   background-color: #ffffff;
   padding: 24px;
   border-radius: 16px;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  border: 1px solid #f3f4f6;
 }
 
 .strt h4 {
@@ -215,6 +239,19 @@ ul li {
 .tod .text2 p:hover {
   background-color: #f9fafb;
   color: #111827;
+}
+.all {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.massag {
+  margin-left: 20px;
+}
+.real {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
 }
 .container {
   width: 320px;
@@ -283,78 +320,100 @@ ul li {
 }
 main {
   padding: 5px;
+  gap: 20px;
   background-color: #f9fafb;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
-
-
-}
-
-.reservation, .review, .massage {
-  max-width: 900px;
-  width: 100%;
-  margin: 0 auto;
-  
 }
 
 .card-res {
-  background-color: white;
-  display: flex;
-}
-
-.review {
+  background-color: #fff;
   display: flex;
   flex-direction: row;
-  max-width: 900px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 50px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  gap: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  gap: 10px;
 }
 
-.review img {
-  width: 50px;
-  height: 50px;
+.card-res h3 {
+  margin: 0;
+  color: #333;
+}
+
+.card-res p {
+  margin: 4px 0;
+  color: #555;
+}
+.reservation {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 90%;
+  margin: 20px auto;
+}
+.reat {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.review {
+  width: 90%;
+}
+
+.review-content img {
+  grid-column: 1;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f9eefc;
 }
-
+.review-content {
+  display: flex;
+}
 .review-header {
-  font-weight: bold;
-  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 2px;
+  line-height: 1.4;
 }
 
 .rating {
-  color: #f39c12;
-  margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 8px;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .comment {
-  margin-bottom: 10px;
-  line-height: 2;
+  font-size: 15px;
+  color: #555555;
+  line-height: 1.6;
+  margin-top: 12px;
 }
 
 .replay {
-  width: 60px;
-  font-size: 10;
-  color: #583CF0;
-  font-weight: bold;
-  border: 9px solid #9D50FF;
-  border-radius: 15px;
-  padding: 4px;
-
+  font-size: 13px;
+  color: #4caf50;
+  margin-top: 10px;
+  padding-left: 5px;
 }
 
 .massage {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
   gap: 15px;
   padding: 20px;
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
- 
 }
 
 .massage-card {
@@ -371,14 +430,12 @@ main {
   transform: translateY(-2px);
 }
 
-
 .avatar {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   object-fit: cover;
 }
-
 
 .massage-content {
   flex: 1;
@@ -387,32 +444,77 @@ main {
   gap: 5px;
 }
 
-
 .header {
   font-weight: bold;
   font-size: 14px;
   color: #333;
 }
 
-
 .guestname {
   color: #007bff;
 }
-
 
 .procces {
   color: #888;
   font-style: italic;
 }
 
-
 .date {
   font-size: 12px;
   color: #aaa;
 }
 
-
 .massage-text {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+.activities {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+}
+
+.activity-card {
+  display: flex;
+  gap: 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.activity-card:hover {
+  transform: translateY(-2px);
+}
+
+.activity-card .avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.activity-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.activity-content .header {
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+.activity .message {
   font-size: 14px;
   color: #555;
   line-height: 1.5;

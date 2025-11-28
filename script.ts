@@ -51,6 +51,7 @@ if (reservation) {
   reservation.innerHTML = reservations
     .map((reservation) => {
       return `
+     
        <div class="card-res">
           <h3>${reservation.roomname}</h3>
           <p> name :${reservation.guestname}</p>
@@ -216,7 +217,7 @@ const activitie : Activities[] = [
     time:"20:20 pm"
   },
     {
-    avatar:"iimage/Ellipse 179.png",
+    avatar:"image/Ellipse 179.png",
     act:"Room with balcony needscleaning",
     message:"Lorem ipsum dolor sit ament",
     date: "April 22, 2022",
@@ -230,3 +231,22 @@ const activitie : Activities[] = [
     time:"20:20 pm"
   },
 ] 
+if (activities) {
+  activities.innerHTML = activitie.map((actt) => {
+    return `
+      <div class="activity-card">
+        <img src="${actt.avatar}" alt="avatar" class="avatar">
+        <div class="activity">
+          <div class="header">${actt.act}</div>
+          <div class="message">${actt.message}</div>
+          <div class="meta">
+            <span class="date">${actt.date}</span> | 
+            <span class="time">${actt.time}</span>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join("");
+} else {
+  console.error("Error");
+}
