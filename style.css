@@ -353,58 +353,74 @@ main {
   width: 90%;
   margin: 20px auto;
 }
-.reat {
-  background: white;
-  border-radius: 12px;
-  padding: 24px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
 .review {
   width: 90%;
+  margin: 0 auto 20px auto;
+}
+
+.reat {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: flex-start;
+  
+  
 }
 
 .review-content img {
-  grid-column: 1;
   width: 60px;
   height: 60px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #f9eefc;
 }
+
 .review-content {
+  width: 90%;
   display: flex;
+  justify-content: space-around;
+
+}
+.dis{
+  display: flex;
+  flex-direction: column;
 }
 .review-header {
   font-size: 16px;
   font-weight: 600;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
   line-height: 1.4;
+}
+.rewiew-trip{
+  color: gray;
 }
 
 .rating {
-  font-size: 18px;
-  margin-bottom: 8px;
-  line-height: 1;
   font-size: 14px;
   font-weight: 400;
+  margin-bottom: 8px;
+  color: #ffb400;
 }
 
 .comment {
   font-size: 15px;
-  color: #555555;
+  color: #555;
   line-height: 1.6;
-  margin-top: 12px;
 }
 
 .replay {
+  width: 140px;
+  height: 48px;
   font-size: 13px;
-  color: #4caf50;
   margin-top: 10px;
-  padding-left: 5px;
+  background: #6c63ff;
+  color: white;
+  padding: 14px 12px;
+  border-radius: 6px;
+  text-align: center;
+  
 }
 
 .massage {

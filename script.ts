@@ -116,11 +116,14 @@ if (review) {
       return ` <div class="reat">
             <div class="review-content">
              <img src="image/Screenshot 2021-03-06 at 00.07 3.png" alt="avatar">
-                <div class="review-header">${review.guestname} | ${
-        review.tripstart
-      } - ${review.tripend}</div>
+            <div class="dis">
+              <div class="review-header">${review.guestname}</div> 
+              <div class="comment">${review.comment}</div>
+               <div class= "rewiew-trip">
+                ${review.tripstart} - ${review.tripend}</div>
+            </div>
+               
                 <div class="rating">Rating: ${"★".repeat(review.rating)}</div>
-                <div class="comment">${review.comment}</div>
                 ${review.replay ? '<div class="replay">Replied</div>' : ""}
             </div>
      </div>
@@ -172,8 +175,9 @@ const massages: Massage[] = [
 ];
 
 if (massage) {
-  massage.innerHTML = massages.map((mes) => {
-      return`   
+  massage.innerHTML = massages
+    .map((mes) => {
+      return `   
      
       <div class="massage-card">
           <img src="${mes.avatar}" alt="avatar" class="avatar">
@@ -194,46 +198,47 @@ if (massage) {
   console.log("error ");
 }
 type Activities = {
-  avatar:string,
-  act:string,
-  message:string,
-  date:string,
-  time:string,
-}
+  avatar: string;
+  act: string;
+  message: string;
+  date: string;
+  time: string;
+};
 
-const activitie : Activities[] = [
+const activitie: Activities[] = [
   {
-    avatar:"image/Ellipse 176.png",
-    act:"Room with balcony needscleaning",
-    message:"Lorem ipsum dolor sit ament",
+    avatar: "image/Ellipse 176.png",
+    act: "Room with balcony needscleaning",
+    message: "Lorem ipsum dolor sit ament",
     date: "April 22, 2022",
-    time:"20:20 pm"
+    time: "20:20 pm",
   },
-    {
-    avatar:"image/Ellipse 178.png",
-    act:"Room with balcony needscleaning",
-    message:"Lorem ipsum dolor sit ament",
+  {
+    avatar: "image/Ellipse 178.png",
+    act: "Room with balcony needscleaning",
+    message: "Lorem ipsum dolor sit ament",
     date: "April 22, 2022",
-    time:"20:20 pm"
+    time: "20:20 pm",
   },
-    {
-    avatar:"image/Ellipse 179.png",
-    act:"Room with balcony needscleaning",
-    message:"Lorem ipsum dolor sit ament",
+  {
+    avatar: "image/Ellipse 179.png",
+    act: "Room with balcony needscleaning",
+    message: "Lorem ipsum dolor sit ament",
     date: "April 22, 2022",
-    time:"20:20 pm"
+    time: "20:20 pm",
   },
-    {
-    avatar:"image/Rectangle 726.png",
-    act:"Room with balcony needscleaning",
-    message:"Lorem ipsum dolor sit ament",
+  {
+    avatar: "image/Rectangle 726.png",
+    act: "Room with balcony needscleaning",
+    message: "Lorem ipsum dolor sit ament",
     date: "April 22, 2022",
-    time:"20:20 pm"
+    time: "20:20 pm",
   },
-] 
+];
 if (activities) {
-  activities.innerHTML = activitie.map((actt) => {
-    return `
+  activities.innerHTML = activitie
+    .map((actt) => {
+      return `
       <div class="activity-card">
         <img src="${actt.avatar}" alt="avatar" class="avatar">
         <div class="activity">
@@ -246,7 +251,8 @@ if (activities) {
         </div>
       </div>
     `;
-  }).join("");
+    })
+    .join("");
 } else {
   console.error("Error");
 }

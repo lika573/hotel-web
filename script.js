@@ -76,7 +76,7 @@ var view = [
 if (review) {
     review.innerHTML = view
         .map(function (review) {
-        return " <div class=\"reat\">\n            <div class=\"review-content\">\n             <img src=\"image/Screenshot 2021-03-06 at 00.07 3.png\" alt=\"avatar\">\n                <div class=\"review-header\">".concat(review.guestname, " | ").concat(review.tripstart, " - ").concat(review.tripend, "</div>\n                <div class=\"rating\">Rating: ").concat("★".repeat(review.rating), "</div>\n                <div class=\"comment\">").concat(review.comment, "</div>\n                ").concat(review.replay ? '<div class="replay">Replied</div>' : "", "\n            </div>\n     </div>\n      \n  ");
+        return " <div class=\"reat\">\n            <div class=\"review-content\">\n             <img src=\"image/Screenshot 2021-03-06 at 00.07 3.png\" alt=\"avatar\">\n            <div class=\"dis\">\n              <div class=\"review-header\">".concat(review.guestname, "</div> \n              <div class=\"comment\">").concat(review.comment, "</div>\n               <div class= \"rewiew-trip\">\n                ").concat(review.tripstart, " - ").concat(review.tripend, "</div>\n            </div>\n               \n                <div class=\"rating\">Rating: ").concat("★".repeat(review.rating), "</div>\n                ").concat(review.replay ? '<div class="replay">Replied</div>' : "", "\n            </div>\n     </div>\n      \n  ");
     })
         .join(" ");
 }
@@ -114,7 +114,8 @@ var massages = [
     },
 ];
 if (massage) {
-    massage.innerHTML = massages.map(function (mes) {
+    massage.innerHTML = massages
+        .map(function (mes) {
         return "   \n     \n      <div class=\"massage-card\">\n          <img src=\"".concat(mes.avatar, "\" alt=\"avatar\" class=\"avatar\">\n          <div class=\"massage-content\">\n            <div class=\"header\">\n              <span class=\"guestname\">").concat(mes.guestname, "</span> | \n              <span class=\"procces\">").concat(mes.procces, "</span>\n            </div>\n            <div class=\"date\">").concat(mes.date, "</div>\n            <div class=\"massage-text\">").concat(mes.massage, "</div>\n          </div>\n        </div>\n      \n  ");
     })
         .join(" ");
@@ -128,34 +129,36 @@ var activitie = [
         act: "Room with balcony needscleaning",
         message: "Lorem ipsum dolor sit ament",
         date: "April 22, 2022",
-        time: "20:20 pm"
+        time: "20:20 pm",
     },
     {
         avatar: "image/Ellipse 178.png",
         act: "Room with balcony needscleaning",
         message: "Lorem ipsum dolor sit ament",
         date: "April 22, 2022",
-        time: "20:20 pm"
+        time: "20:20 pm",
     },
     {
         avatar: "image/Ellipse 179.png",
         act: "Room with balcony needscleaning",
         message: "Lorem ipsum dolor sit ament",
         date: "April 22, 2022",
-        time: "20:20 pm"
+        time: "20:20 pm",
     },
     {
         avatar: "image/Rectangle 726.png",
         act: "Room with balcony needscleaning",
         message: "Lorem ipsum dolor sit ament",
         date: "April 22, 2022",
-        time: "20:20 pm"
+        time: "20:20 pm",
     },
 ];
 if (activities) {
-    activities.innerHTML = activitie.map(function (actt) {
+    activities.innerHTML = activitie
+        .map(function (actt) {
         return "\n      <div class=\"activity-card\">\n        <img src=\"".concat(actt.avatar, "\" alt=\"avatar\" class=\"avatar\">\n        <div class=\"activity\">\n          <div class=\"header\">").concat(actt.act, "</div>\n          <div class=\"message\">").concat(actt.message, "</div>\n          <div class=\"meta\">\n            <span class=\"date\">").concat(actt.date, "</span> | \n            <span class=\"time\">").concat(actt.time, "</span>\n          </div>\n        </div>\n      </div>\n    ");
-    }).join("");
+    })
+        .join("");
 }
 else {
     console.error("Error");
