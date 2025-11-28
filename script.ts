@@ -117,13 +117,17 @@ if (review) {
             <div class="review-content">
              <img src="image/Screenshot 2021-03-06 at 00.07 3.png" alt="avatar">
             <div class="dis">
-              <div class="review-header">${review.guestname}</div> 
-              <div class="comment">${review.comment}</div>
-               <div class= "rewiew-trip">
-                ${review.tripstart} - ${review.tripend}</div>
+            <div class="reatname">     
+             <div class="review-header">${review.guestname}</div> 
+              <div class="rating">Rating: ${"★".repeat(review.rating)}</div>
             </div>
-               
-                <div class="rating">Rating: ${"★".repeat(review.rating)}</div>
+        
+              <div class="comment">${review.comment}</div>
+                
+            </div>
+            <div class= "rewiew-trip">
+                ${review.tripstart} - ${review.tripend}</div>
+                
                 ${review.replay ? '<div class="replay">Replied</div>' : ""}
             </div>
      </div>
