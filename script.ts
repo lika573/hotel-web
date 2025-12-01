@@ -121,13 +121,10 @@ if (review) {
              <div class="review-header">${review.guestname}</div> 
               <div class="rating">Rating: ${"★".repeat(review.rating)}</div>
             </div>
-        
               <div class="comment">${review.comment}</div>
-                
             </div>
             <div class= "rewiew-trip">
                 ${review.tripstart} - ${review.tripend}</div>
-                
                 ${review.replay ? '<div class="replay">Replied</div>' : ""}
             </div>
      </div>

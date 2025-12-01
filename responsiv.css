@@ -1,0 +1,259 @@
+@media (max-width: 1500px) {
+  header {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 1200px) {
+  .head {
+    width: 70%;
+    display: flex;
+  }
+
+  .view {
+    text-align: center;
+  }
+  .lin ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .links ul {
+    text-align: center;
+  }
+  .act {
+    margin: auto;
+  }
+
+  .layout {
+    display: block;
+    
+  }
+
+  .strt {
+    width: 100%;
+  }
+
+  .review {
+    width: 100%;
+  }
+  .reservation {
+    width: 100%;
+  }
+
+  .massage {
+    grid-template-columns: auto;
+    width: 100%;
+  }
+
+  .over h3 {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .card-res {
+    display: flex;
+    flex-direction: row;
+  }
+ 
+}
+
+@media (max-width: 1110px) {
+  .head {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .links ul {
+    text-align: center;
+  }
+
+  .layout {
+    display: block;
+
+  }
+
+  .view {
+    width: 100%;
+    height: auto;
+  }
+
+  .strt {
+    width: 100%;
+  }
+
+  .review {
+    width: 100%;
+  }
+  .reservation {
+    width: 100%;
+  }
+
+  .massage {
+    grid-template-columns: auto;
+    width: 100%;
+  }
+
+  .over h3 {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .container {
+    width: 100%;
+  }
+  .card-res {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 15px;
+ 
+  }
+
+  .head {
+    width: 100%;  
+    
+  }
+  .button{
+    order: 1;
+  }
+  .lego{
+    order: 2;
+  }
+  .fics{
+    order: 3;
+  }
+  
+ .lego img{
+    margin: auto;
+  }
+  .links{
+    margin: 6px 0;
+    display: none;
+  }
+  .links-2 .button img  {
+    display: block;
+   
+  }
+   .links-2 .button:hover ul{
+    display: block;
+    
+  }
+ .links-2 .button:hover ul{
+  max-width: 500px;
+  padding: 30px;
+  gap: 15px;
+  left: 20%;
+  top: 150%;
+  position: relative;
+  background-color: #fdfdfd;
+  border: 1px solid #d1d5db;
+  border-radius: 4px; 
+  
+ }
+
+  .layout {
+    padding: 10px;
+  }
+
+  .view,
+  .strt,
+  .reservation,
+  .review {
+    width: 100%;
+  }
+
+  .review-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .reat {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .activities {
+    padding: 10px;
+  }
+  .card-res {
+    display: flex;
+    flex-direction: row;
+  }
+  .reat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 550px) {
+  .strt {
+    flex-direction: row;  
+    padding: 10px;
+    gap: 15px;
+  }
+  .reservation{
+    width: 100%;
+    padding: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .head {
+    width: 100%;  
+    
+  }
+  .button{
+    order: 1;
+  }
+  .lego{
+    order: 2;
+  }
+  .fics{
+    order: 3;
+  }
+  .links ul {
+    font-size: 14px;
+  }
+
+  .fics {
+    flex-wrap: wrap;
+  }
+  .strt {
+    flex-direction: row;  
+    padding: 10px;
+    gap: 15px;
+  }
+  .reservation{
+    width: 100%;
+    padding: 10px;
+  }
+  .room img {
+    width: 100%;
+    height: auto;
+  }
+
+  .act,
+  #act {
+    width: 100%;
+  }
+
+
+
+  .massage-card,
+  .activity-card {
+    flex-direction: column;
+  }
+
+  .avatar {
+    width: 50px;
+    height: 50px;
+  }
+}

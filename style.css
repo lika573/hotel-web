@@ -12,14 +12,17 @@ header {
 }
 .head {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
   width: 95%;
   margin: 0 auto;
 }
 .links {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  width: 90%;
+ 
 }
+
 .links ul {
   display: flex;
   justify-content: space-between;
@@ -27,6 +30,8 @@ header {
   gap: 20px;
   list-style: none;
 }
+
+
 ul li {
   color: grey;
 }
@@ -34,14 +39,43 @@ ul li a {
   text-decoration: none;
   color: grey;
 }
+.links-2{
+  display: flex;
+  align-items: center;
+}
+.links-2 .button {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.links-2 .button img {
+  width: 60%;
+  height: 60%;
+  display: none;
+}
+.links-2 ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  display: none;
+}
+
 .lego img {
   width: 62px;
   height: 62px;
 }
 .fics {
   display: flex;
+  flex-direction: row;
   gap: 16px;
   margin-top: 5px;
+  order: 3;
 }
 .fic1 img {
   width: 102px;
@@ -71,7 +105,6 @@ ul li a {
 
 .view {
   background-color: white;
-  max-width: 300px;
   border: 1px solid #f3f4f6;
   padding: 15px;
   box-sizing: border-box;
@@ -141,7 +174,7 @@ ul li a {
   margin-top: 20px;
 }
 
-#act {
+#acts {
   padding: 8px 12px;
   border: 1px solid grey;
   font-size: 16px;
@@ -165,7 +198,6 @@ ul li a {
 .over h3 {
   margin-right: 900px;
   font-weight: 500;
-  font-size: 20px;
   line-height: 28px;
   font-size: 32px;
   font-weight: 600;
@@ -180,6 +212,7 @@ ul li a {
   padding: 24px;
   border-radius: 16px;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
 }
 
 .strt h4 {
@@ -354,6 +387,7 @@ main {
   gap: 15px;
   width: 90%;
   margin: 20px auto;
+  
 }
 .review {
   width: 90%;
@@ -382,7 +416,7 @@ main {
 .review-content {
   width: 90%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 
 }
 .dis{
@@ -509,7 +543,7 @@ main {
   border-radius: 10px;
   padding: 15px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
+
 }
 
 .activity-card:hover {
