@@ -172,3 +172,8 @@ button.addEventListener("click", function () {
         nav.style.display = isOpen ? "flex" : "none";
     }
 });
+var switchbutton = document.querySelector(".switchbutton");
+var body = document.body;
+switchbutton === null || switchbutton === void 0 ? void 0 : switchbutton.addEventListener("click", function () {
+    body.classList.toggle("dark-theme");
+});

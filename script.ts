@@ -259,7 +259,7 @@ if (activities) {
 }
 
 let isOpen: boolean = false;
-
+  
 const button = document.querySelector(".button") as HTMLButtonElement;
 const nav = document.querySelector(".links-2") as HTMLElement;
 
@@ -269,3 +269,16 @@ button.addEventListener("click", () => {
     nav.style.display = isOpen ? "flex" : "none";
   }
 });
+
+const switchbutton  = document.querySelector(".switchbutton") as HTMLButtonElement;
+const body = document.body
+
+
+
+switchbutton?.addEventListener("click", ()=>{
+ body.classList.toggle("dark-theme")
+})
+
+
+
+
