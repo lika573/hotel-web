@@ -27,7 +27,6 @@
 
   .layout {
     display: block;
-    
   }
 
   .strt {
@@ -59,7 +58,6 @@
     display: flex;
     flex-direction: row;
   }
- 
 }
 
 @media (max-width: 1110px) {
@@ -74,7 +72,6 @@
 
   .layout {
     display: block;
-
   }
 
   .view {
@@ -115,50 +112,35 @@
 @media (max-width: 768px) {
   header {
     padding: 15px;
- 
   }
 
   .head {
-    width: 100%;  
-    
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
   }
-  .button{
-    order: 1;
-  }
-  .lego{
-    order: 2;
-  }
-  .fics{
-    order: 3;
-  }
-  
- .lego img{
+
+  .lego img {
     margin: auto;
   }
-  .links{
+  .links {
     margin: 6px 0;
     display: none;
   }
-  .links-2 .button img  {
+
+  .button img {
     display: block;
-   
   }
-   .links-2 .button:hover ul{
-    display: block;
-    
+
+  .links-2 ul {
+    width: 150px;
+    padding: 15px;
+    background-color: #eceaea;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
   }
- .links-2 .button:hover ul{
-  max-width: 500px;
-  padding: 30px;
-  gap: 15px;
-  left: 20%;
-  top: 150%;
-  position: relative;
-  background-color: #fdfdfd;
-  border: 1px solid #d1d5db;
-  border-radius: 4px; 
-  
- }
 
   .layout {
     padding: 10px;
@@ -196,27 +178,26 @@
 }
 @media (max-width: 550px) {
   .strt {
-    flex-direction: row;  
+    flex-direction: row;
     padding: 10px;
     gap: 15px;
   }
-  .reservation{
+  .reservation {
     width: 100%;
     padding: 10px;
   }
 }
 @media (max-width: 480px) {
   .head {
-    width: 100%;  
-    
+    width: 100%;
   }
-  .button{
+  .button {
     order: 1;
   }
-  .lego{
+  .lego {
     order: 2;
   }
-  .fics{
+  .fics {
     order: 3;
   }
   .links ul {
@@ -227,14 +208,18 @@
     flex-wrap: wrap;
   }
   .strt {
-    flex-direction: row;  
+    flex-direction: row;
     padding: 10px;
     gap: 15px;
   }
-  .reservation{
+  .reservation {
     width: 100%;
     padding: 10px;
   }
+  .card-res {
+    display: block;
+  }
+
   .room img {
     width: 100%;
     height: auto;
@@ -244,8 +229,6 @@
   #act {
     width: 100%;
   }
-
-
 
   .massage-card,
   .activity-card {

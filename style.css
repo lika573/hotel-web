@@ -12,7 +12,7 @@ header {
 }
 .head {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   width: 95%;
   margin: 0 auto;
 }
@@ -20,7 +20,6 @@ header {
   display: flex;
   justify-content: center;
   width: 90%;
- 
 }
 
 .links ul {
@@ -31,7 +30,6 @@ header {
   list-style: none;
 }
 
-
 ul li {
   color: grey;
 }
@@ -39,22 +37,34 @@ ul li a {
   text-decoration: none;
   color: grey;
 }
-.links-2{
+.navi {
+  width: 200px;
+  position: relative;
+}
+.links-2 {
   display: flex;
   align-items: center;
+  position: absolute;
+  left: 0;
+  top: 60px;
 }
-.links-2 .button {
+.button {
   width: 60px;
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-
-.links-2 .button img {
-  width: 60%;
-  height: 60%;
+.button {
+  border: none;
+  padding: 5px;
+  border-radius: 12px;
+  width: 50px;
+  height: 60px;
+}
+.button img {
+  width: 100%;
+  height: 100%;
   display: none;
 }
 .links-2 ul {
@@ -277,8 +287,8 @@ ul li a {
   justify-content: space-between;
   width: 90%;
 }
-.all p{
-  color: #9D50FF;
+.all p {
+  color: #9d50ff;
 }
 .massag {
   margin-left: 20px;
@@ -387,7 +397,6 @@ main {
   gap: 15px;
   width: 90%;
   margin: 20px auto;
-  
 }
 .review {
   width: 90%;
@@ -401,8 +410,6 @@ main {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   display: flex;
   align-items: flex-start;
-  
-  
 }
 
 .review-content img {
@@ -417,13 +424,12 @@ main {
   width: 90%;
   display: flex;
   justify-content: space-between;
-
 }
-.dis{
+.dis {
   display: flex;
   flex-direction: column;
 }
-.reatname{  
+.reatname {
   display: flex;
   gap: 8px;
 }
@@ -433,7 +439,7 @@ main {
   margin-bottom: 4px;
   line-height: 1.4;
 }
-.rewiew-trip{
+.rewiew-trip {
   color: gray;
 }
 
@@ -460,7 +466,6 @@ main {
   padding: 14px 12px;
   border-radius: 6px;
   text-align: center;
-  
 }
 
 .massage {
@@ -543,7 +548,6 @@ main {
   border-radius: 10px;
   padding: 15px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-
 }
 
 .activity-card:hover {

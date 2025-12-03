@@ -257,3 +257,15 @@ if (activities) {
 } else {
   console.error("Error");
 }
+
+let isOpen: boolean = false;
+
+const button = document.querySelector(".button") as HTMLButtonElement;
+const nav = document.querySelector(".links-2") as HTMLElement;
+
+button.addEventListener("click", () => {
+  isOpen = !isOpen;
+  if (nav) {
+    nav.style.display = isOpen ? "flex" : "none";
+  }
+});

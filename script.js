@@ -76,7 +76,7 @@ var view = [
 if (review) {
     review.innerHTML = view
         .map(function (review) {
-        return " <div class=\"reat\">\n            <div class=\"review-content\">\n             <img src=\"image/Screenshot 2021-03-06 at 00.07 3.png\" alt=\"avatar\">\n            <div class=\"dis\">\n            <div class=\"reatname\">     \n             <div class=\"review-header\">".concat(review.guestname, "</div> \n              <div class=\"rating\">Rating: ").concat("★".repeat(review.rating), "</div>\n            </div>\n        \n              <div class=\"comment\">").concat(review.comment, "</div>\n                \n            </div>\n            <div class= \"rewiew-trip\">\n                ").concat(review.tripstart, " - ").concat(review.tripend, "</div>\n                \n                ").concat(review.replay ? '<div class="replay">Replied</div>' : "", "\n            </div>\n     </div>\n      \n  ");
+        return " <div class=\"reat\">\n            <div class=\"review-content\">\n             <img src=\"image/Screenshot 2021-03-06 at 00.07 3.png\" alt=\"avatar\">\n            <div class=\"dis\">\n            <div class=\"reatname\">     \n             <div class=\"review-header\">".concat(review.guestname, "</div> \n              <div class=\"rating\">Rating: ").concat("★".repeat(review.rating), "</div>\n            </div>\n              <div class=\"comment\">").concat(review.comment, "</div>\n            </div>\n            <div class= \"rewiew-trip\">\n                ").concat(review.tripstart, " - ").concat(review.tripend, "</div>\n                ").concat(review.replay ? '<div class="replay">Replied</div>' : "", "\n            </div>\n     </div>\n      \n  ");
     })
         .join(" ");
 }
@@ -163,3 +163,12 @@ if (activities) {
 else {
     console.error("Error");
 }
+var isOpen = false;
+var button = document.querySelector(".button");
+var nav = document.querySelector(".links-2");
+button.addEventListener("click", function () {
+    isOpen = !isOpen;
+    if (nav) {
+        nav.style.display = isOpen ? "flex" : "none";
+    }
+});
