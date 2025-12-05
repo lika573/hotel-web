@@ -1,16 +1,6 @@
-@media (max-width: 1500px) {
-  header {
-    display: flex;
-    justify-content: space-evenly;
-  }
+@media screen and (max-width: 1844px) {
 }
-
 @media (max-width: 1200px) {
-  .head {
-    width: 70%;
-    display: flex;
-  }
-
   .view {
     text-align: center;
   }
@@ -61,13 +51,8 @@
 }
 
 @media (max-width: 1110px) {
-  .head {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .links ul {
-    text-align: center;
+  .links a {
+    font-size: 15px;
   }
 
   .layout {
@@ -108,30 +93,37 @@
     flex-direction: row;
   }
 }
-
+@media (max-width: 925px) {
+  main {
+    padding: 0 30px;
+  }
+  .links a {
+    font-size: 11px;
+  }
+}
 @media (max-width: 768px) {
   header {
     padding: 15px;
+    width: 100;
   }
 
-  .head {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+  .fics {
+    flex-direction: column-reverse;
   }
-
   .lego img {
     margin: auto;
   }
-  .links {
-    margin: 6px 0;
-    display: none;
-  }
 
+  .navi {
+    display: block;
+  }
   .button img {
     display: block;
   }
 
+  .links {
+    display: none;
+  }
   .links-2 ul {
     width: 150px;
     padding: 15px;
@@ -186,11 +178,11 @@
     width: 100%;
     padding: 10px;
   }
+  .card-res {
+    display: block;
+  }
 }
 @media (max-width: 480px) {
-  .head {
-    width: 100%;
-  }
   .button {
     order: 1;
   }
