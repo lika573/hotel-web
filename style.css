@@ -291,6 +291,7 @@ ul li a {
 .all {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 .all p {
   color: #9d50ff;
@@ -301,6 +302,7 @@ ul li a {
 .real {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 .container {
   width: 320px;
@@ -424,6 +426,10 @@ main {
 }
 
 .review-content {
+  display: flex;
+  justify-content: space-between;
+}
+.three{
   display: flex;
   justify-content: space-between;
 }

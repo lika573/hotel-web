@@ -113,22 +113,27 @@ const view: Review[] = [
 if (review) {
   review.innerHTML = view
     .map((review) => {
-      return ` <div class="reat">
+      return `   <div class="reat">
             <div class="review-content">
-             <img src="image/Screenshot 2021-03-06 at 00.07 3.png" alt="avatar">
+            <div class="three">
+              <img src="image/Screenshot 2021-03-06 at 00.07 3.png" alt="avatar">
             <div class="dis">
             <div class="reatname">     
              <div class="review-header">${review.guestname}</div> 
               <div class="rating">Rating: ${"★".repeat(review.rating)}</div>
             </div>
               <div class="comment">${review.comment}</div>
+            </div> 
             </div>
-            <div class= "rewiew-trip">
-                ${review.tripstart} - ${review.tripend}</div>
+           
+             <div class="repaly">
+       <div class= "rewiew-trip">
                 ${review.replay ? '<div class="replay">Replied</div>' : ""}
+                ${review.tripstart} - ${review.tripend}</div>
+                
             </div>
+    </div>
      </div>
-      
   `;
     })
     .join(" ");
