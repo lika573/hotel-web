@@ -154,6 +154,14 @@
     flex-direction: column;
     gap: 10px;
   }
+  .lin ul {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .lin p {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 
   .activities {
     padding: 10px;
@@ -168,12 +176,44 @@
     justify-content: space-around;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 637px) {
+  .card-res {
+    display: block;
+  }
+  .strt{
+    width: 100%;
+  }
+  .strt .cheakin{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .strt .cheakout{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .strt .progres{
+     width: 100%;
+    display: flex;
+    justify-content: space-between; 
+
+  }
+  .strt .tod{
+    margin: auto;
+    text-align: center;
+    width: 30%;
+
+  }
+
+}
+@media (max-width: 605px) {
   .strt {
-    flex-direction: row;
+    display: block;
     padding: 10px;
     gap: 15px;
   }
+
   .reservation {
     width: 100%;
     padding: 10px;
@@ -200,7 +240,7 @@
     flex-wrap: wrap;
   }
   .strt {
-    flex-direction: row;
+    display: block;
     padding: 10px;
     gap: 15px;
   }
