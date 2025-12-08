@@ -113,7 +113,7 @@ const view: Review[] = [
 if (review) {
   review.innerHTML = view
     .map((review) => {
-      return `   <div class="reat">
+      return `     <div class="reat">
             <div class="review-content">
             <div class="three">
               <img src="image/Screenshot 2021-03-06 at 00.07 3.png" alt="avatar">
@@ -129,7 +129,7 @@ if (review) {
              <div class="repaly">
        <div class= "rewiew-trip">
                 ${review.replay ? '<div class="replay">Replied</div>' : ""}
-                ${review.tripstart} - ${review.tripend}</div>
+                <span>${review.tripstart}</span> - <span>${review.tripend}</span></div>
                 
             </div>
     </div>

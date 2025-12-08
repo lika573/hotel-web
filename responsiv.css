@@ -175,6 +175,7 @@
     flex-direction: row;
     justify-content: space-around;
   }
+  
 }
 @media (max-width: 637px) {
   .card-res {
@@ -205,6 +206,7 @@
     width: 30%;
 
   }
+ 
 
 }
 @media (max-width: 605px) {

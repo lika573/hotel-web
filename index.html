@@ -17,18 +17,21 @@
           </button>
           <nav class="links-2">
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="">Calendar</a></li>
-              <li><a href="">Performance</a></li>
-              <li><a href="">Reservations</a></li>
-              <li><a href="">Reviews</a></li>
-              <li><a href="">Earnigs</a></li>
-              <li><a href="">Messages</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Calendar</a></li>
+              <li><a href="#">Performance</a></li>
+              <li><a href="#">Reservations</a></li>
+              <li><a href="#">Reviews</a></li>
+              <li><a href="#">Earnigs</a></li>
+              <li><a href="#">Messages</a></li>
             </ul>
           </nav>
         </div>
         <div class="lego">
-          <img src="image/lego.png" alt="lego" />
+          <a href="index.html">
+          <img src="image/lego.png" alt="lego" />  
+          </a>
+          
         </div>
 
         <nav class="links">
@@ -195,6 +198,26 @@
         <div class="activities"></div>
       </div>
     </div>
-   
+   <div class="reat">
+            <div class="review-content">
+            <div class="three">
+              <img src="image/Screenshot 2021-03-06 at 00.07 3.png" alt="avatar">
+            <div class="dis">
+            <div class="reatname">     
+             <div class="review-header">${review.guestname}</div> 
+              <div class="rating">Rating: ${"★".repeat(review.rating)}</div>
+            </div>
+              <div class="comment">${review.comment}</div>
+            </div> 
+            </div>
+           
+             <div class="repaly">
+       <div class= "rewiew-trip">
+                ${review.replay ? '<div class="replay">Replied</div>' : ""}
+                <span>${review.tripstart}</span> - <span>${review.tripend}</span></div>
+                
+            </div>
+    </div>
+     </div>
   </body>
 </html>

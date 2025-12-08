@@ -60,11 +60,15 @@ ul li a {
   border-radius: 12px;
   width: 50px;
   height: 60px;
+  
 }
 .button img {
   width: 85%;
   height: 85%;
   display: none;
+}
+.switchbutton{
+  cursor: pointer;
 }
 .links-2 ul {
   display: flex;
@@ -436,6 +440,7 @@ main {
 .dis {
   display: flex;
   flex-direction: column;
+  margin-left: 5px;
 }
 .reatname {
   display: flex;
@@ -468,7 +473,7 @@ main {
   width: 140px;
   height: 48px;
   font-size: 13px;
-  margin-top: 10px;
+  margin: 10px;
   background: #6c63ff;
   color: white;
   padding: 14px 12px;
@@ -609,6 +614,7 @@ body.dark-theme {
 body.dark-theme button {
   background-color: #1b3c53;
   color: white;
+  cursor: pointer;
 }
 body.dark-theme path {
   fill: white;
